@@ -79,6 +79,15 @@ public class LZ77 {
 
     public static void main(String[] args) {
 	//Tests for LZ77/PlusLongueOccurrence()
+    //1. handle the empty list
+    //2. handle the null list
+    //3. nominal test of function
+    //4. Selects the larger occurrence, which is the first
+    //5. selects the larger occurrence, which is the second
+    //6. selects the earlier occurrence, when two are the same size.
+    //7. Case when (t.length - positioncourante) > fenetre
+    //8. Case when (t.length - positioncourante) < fenetre AND (t.length - positionCourante) > positionCourante
+    //9. Case when (t.length - positionCourante) < fenetre AND (t.length - positionCourante) < positionCourante
 	System.out.println("Tests for LZ77/PlusLongueOccurrence()");
 
 	System.out.println("Test1:\t []");
@@ -97,8 +106,25 @@ public class LZ77 {
 	System.out.println(plusLongueOccurrence(test3, 3, 100));
 	
 
-	System.out.println
+	System.out.println("Test4:\t ([1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,0],12,100)");
+    System.out.println("\t Expected: <Occurrence(12,5)>");
+    int[] test4 = {1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,0};
+    System.out.println(plusLongueOccurrence(test4, 12,100));
 
+    System.out.println("Test5:\t ([1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,1],12,100)");
+    System.out.println("\t Expected: <Ocurrence(6,5)>");
+    int[] test5 = {1,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,1};
+    System.out.println(plusLongueOccurrence(test5, 12,100));
+
+    System.out.println("Test6:\t ([1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0],12,100)");
+    System.out.println("\t Expected: <Occurrence(12,6)>");
+    int[] test6 ={1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0};
+    System.out.println(plusLongueOccurrence(test6, 12,100));
+
+    System.out.println("Test7:\t ([1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0],3,100)");
+    System.out.println("\t Expected: <Occurrence(12,6)>");
+    int[] test7 ={1,0,1,1,0,0,1,0,1,1,0,0,1,0,1,1,0,0};
+    System.out.println(plusLongueOccurrence(test7, 3,100));
     }
 }
 
