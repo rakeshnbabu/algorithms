@@ -1,0 +1,42 @@
+// Ces squelettes sont à compléter et sont là uniquement pour prévenir des
+// erreurs de compilation.
+class Element {
+  Element (Occurrence e, int s) {}
+}
+
+class Occurrence {
+    private int taille;
+    private int retour;
+    Occurrence (int retour, int taille) {
+	this.taille = taille;
+	this.retour = ret
+}
+
+	/**
+	 * @return the taille
+	 */
+	public int getTaille() {
+		return taille;
+	}
+
+	/**
+	 * @param taille the taille to set
+	 */
+	public void setTaille(int taille) {
+		this.taille = taille;
+	}
+
+	/**
+	 * @return the retour
+	 */
+	public int getRetour() {
+		return retour;
+	}
+
+	/**
+	 * @param retour the retour to set
+	 */
+	public void setRetour(int retour) {
+		this.retour = retour;
+	}
+}
