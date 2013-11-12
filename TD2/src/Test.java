@@ -13,17 +13,17 @@ public class Test {
   /* Cette fonction vérifie que les fonctions de hash se comportent bien de la
    * manière attendue. */
   public static void test1a() {
-    // System.out.print("test1a ");
+    System.out.print("test1a ");
 
-    // System.out.print(new Objet1("").hash()+" ");
-    // System.out.print(new Objet1("coucou").hash()+" ");
-    // System.out.print(new Objet1("Quelques tests").hash()+" ");
-    // System.out.print(new Objet1("pour s'assurer").hash()+" ");
-    // System.out.print(new Objet1("que votre fonction").hash()+" ");
-    // System.out.print(new Objet1("donne la bonne").hash()+" ");
-    // System.out.print(new Objet1("sortie").hash()+" ");
+    System.out.print(new Objet1("").hash()+" ");
+    System.out.print(new Objet1("coucou").hash()+" ");
+    System.out.print(new Objet1("Quelques tests").hash()+" ");
+    System.out.print(new Objet1("pour s'assurer").hash()+" ");
+    System.out.print(new Objet1("que votre fonction").hash()+" ");
+    System.out.print(new Objet1("donne la bonne").hash()+" ");
+    System.out.print(new Objet1("sortie").hash()+" ");
 
-    // System.out.println("end");
+    System.out.println("end");
   }
 
   public static void test1b() {

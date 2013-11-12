@@ -65,8 +65,8 @@ def submit():
 
   print '==\n== [sandbox] Submitting Solutions \n=='
 
-  login = None
-  password = None
+  login = "babu.rakesh.n@gmail.com"
+  password = "VQDr3uFjuW"
 
   # First method of accessing the user credentials: the config.ini file.
   if os.access("config.ini", os.R_OK):
