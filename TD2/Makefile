@@ -13,10 +13,12 @@ jar: bin/*.class
 	dx --dex --output=TD2.jar *.class 	
 	cd ..
 
-test: all
+android: all
 	cd bin/
 	java -jar bin/TD2.jar Test
 	cd ..
+test: all
+	java -cp bin/ Test
 
 clean:
 	rm -rf bin/*

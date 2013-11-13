@@ -27,17 +27,17 @@ public class Test {
   }
 
   public static void test1b() {
-    // System.out.print("test1b ");
+    System.out.print("test1b ");
 
-    // System.out.print(new Objet2("").hash()+" ");
-    // System.out.print(new Objet2("coucou").hash()+" ");
-    // System.out.print(new Objet2("Quelques tests").hash()+" ");
-    // System.out.print(new Objet2("pour s'assurer").hash()+" ");
-    // System.out.print(new Objet2("que votre fonction").hash()+" ");
-    // System.out.print(new Objet2("donne la bonne").hash()+" ");
-    // System.out.print(new Objet2("sortie").hash()+" ");
+    System.out.print(new Objet2("").hash()+" ");
+    System.out.print(new Objet2("coucou").hash()+" ");
+    System.out.print(new Objet2("Quelques tests").hash()+" ");
+    System.out.print(new Objet2("pour s'assurer").hash()+" ");
+    System.out.print(new Objet2("que votre fonction").hash()+" ");
+    System.out.print(new Objet2("donne la bonne").hash()+" ");
+    System.out.print(new Objet2("sortie").hash()+" ");
 
-    // System.out.println("end");
+    System.out.println("end");
   }
 
   /* Cette fonction vérifie votre implémentation des listes. */
